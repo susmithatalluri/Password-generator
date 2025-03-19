@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <h1>Password Generator</h1>
+    <div class="password">
+        <input type="text" id="password" value="test" readonly />
+
+        <button onclick="copyPassword()">Copy</button>
+    </div>
+    <div class="range">
+        <input type="range" min="4" max="24" value="8" id="passwordLength" />
+        <span id="passwordLengthValue">8</span>
+    </div>
+    <div class="options">
+        <div class="option">
+            <label>
+                <input type="checkbox" id="lowercaseCb" checked />
+                <span>a-z</span>
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="checkbox" id="uppercaseCb" />
+                <span>A-Z</span>
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="checkbox" id="digitsCb" />
+                <span>0-9</span>
+            </label>
+        </div>
+        <div class="option">
+            <label>
+                <input type="checkbox" id="specialsCb" />
+                <span>!@$#%^</span>
+            </label>
+        </div>
+    </div>
+    <button class="generate" onclick="generatePassword()">Generate</button>
+    <p>A password generator app is essential for creating strong, unique passwords that enhance security and protect against
+         cyber threats like brute force, phishing, and keylogging. Many people use simple, easy-to-guess passwords (like "123456" or "password"), 
+         which are vulnerable to attacks. A password generator creates complex passwords with a mix of letters,numbers, and symbols, making it
+         much harder for attackers to crack them.It ensures passwords are complex and not reused across accounts, 
+         promoting better password hygiene and reducing the risk of unauthorized access to sensitive information.</p>
+
+         <footer>
+            <div class="password-box">
+                <h2 class="highlight-heading">Consequences of Incorrect Password</h2>
+                <p class="password-uses">
+                    If passwords are not secured properly, they can lead to unauthorized access, data breaches, and identity theft. 
+                    Weak or reused passwords make it easier for attackers to compromise sensitive information, resulting in financial loss 
+                    and reputational damage.Proper password security is essential to protect personal and business data.
+                </p>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
